@@ -1,0 +1,27 @@
+{
+  "titleText": "ブギーチャット",
+
+  "loginText": "ログイン",
+  "unLoginText": "非会員として利用する",
+  "signUp": "会員登録",
+
+  "idText": "ID",
+  "idHintText": "IDを入力してください。",
+
+  "pwText": "パスワード",
+  "pwHintText": "パスワードを入力してください。",
+
+  "chatBotInputBox": "ブギーチャットに聞きたいことを入力してください!",
+  "chatBotHintText": "ブギに釜山ワールドエキスポについて質問してください!!",
+
+  "policyText1": "利用約款",
+  "policyText2": "個人情報処理方針",
+  "logoutText": "ログアウト",
+  "deleteAccount": "会員退会",
+
+  "companyName": "テジン電子通信高等学校 | 技能部",
+  "companyName2": "BD.GG| ブギーチャット",
+
+  "text1": "ログイン/会員登録の際、以下の約款に同意したものとみなします。"
+
+}

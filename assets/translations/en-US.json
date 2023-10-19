@@ -1,0 +1,27 @@
+{
+  "TitleText": "BUGI-CHAT",
+
+  "loginText": "login",
+  "unLoginText": "Use as a non-member",
+  "signUp": "Membership",
+
+  "idText": "ID",
+  "idHintText": "Please enter ID",
+
+  "pwText": "password",
+  "pwHintText": "Please enter a password",
+
+  "chatBotInputBox": "Please enter something to ask BoogieChat!",
+  "chatBotHintText": "Please ask Bugi about the Busan World Expo!!",
+
+  "policyText1": "Terms and Conditions of Use",
+  "policyText2": "Personal Data Processing Policy",
+  "logoutText": "logout",
+  "deleteAccount": "Leave membership",
+
+  "companyName": "Daejin Electronics and Telecommunications High School \nFunctional Department",
+  "companyName2": "BD.GG | Boogie Chat",
+
+  "text1": "We consider you have agreed to the terms and conditions below when you sign in/member."
+
+}

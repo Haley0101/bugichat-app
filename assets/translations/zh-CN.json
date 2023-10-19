@@ -1,0 +1,27 @@
+{
+  "titleText": "乌龟聊天",
+
+  "loginText": "登录",
+  "unLoginText": "非会员使用",
+  "signUp": "注册会员",
+
+  "idText": "用户名",
+  "idHintText": "请输入ID。",
+
+  "pwText": "密码",
+  "pwHintText": "请输入密码。",
+
+  "chatBotInputBox": "请输入要问BuggieChat!",
+  "chatBotHintText":"请向布吉提出关于釜山世界博览会的提问!!",
+
+  "policyText1": "使用条款",
+  "policyText2": "个人信息处理方针",
+  "logout text": "退出",
+  "deleteAccount": "退出会员",
+
+  "companyName": "大进电子通信高中| 技能部",
+  "companyName2": "BD.GG | 浮标聊天",
+
+  "text1":"登录/注册会员时视为同意以下条款。"
+
+}

@@ -1,0 +1,27 @@
+{
+  "titleText": "부기챗",
+
+  "loginText": "로그인",
+  "unLoginText": "비회원으로 이용하기",
+  "signUp": "회원가입",
+
+  "idText": "아이디",
+  "idHintText": "아이디를 입력해주세요.",
+
+  "pwText": "비밀번호",
+  "pwHintText": "비밀번호를 입력해주세요.",
+
+  "chatBotInputBox": "부기챗에게 물어 볼 것을 입력해 주세요!",
+  "chatBotHintText": "부기에게 부산월드엑스포에 대해 질문 해주세요!!",
+
+  "policyText1": "이용약관",
+  "policyText2": "개인정보처리방침",
+  "logoutText": "로그아웃",
+  "deleteAccount": "회원탈퇴",
+
+  "companyName": "대진전자통신고등학교 | 기능부",
+  "companyName2": "BD.GG | 부기챗",
+
+  "text1": "로그인/회원가입 시 아래 약관을 동의한 것으로 간주합니다."
+
+}
