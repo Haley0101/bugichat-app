@@ -47547,7 +47547,7 @@ return A.I(A.k5(),$async$qQ)
 case 3:o=g.av(f.aB(c.a,"userId"))
 h=t.N
 n=A.al(["Content-Type","application/json"],h,h)
-m=A.Uw("POST",A.dK("http://pcs.pah.kr:1221/api/ai-chat",0,null))
+m=A.Uw("POST",A.dK("https://bugi.busandaejin.com//api/ai-chat",0,null))
 l=p.CW
 l=l.gl(l)
 i=a.au(i).r.a
@@ -47577,7 +47577,7 @@ K(a){var s,r,q,p,o,n=null,m=$.aV(),l=t.Wo
 l=new A.yX(A.aMy(A.a([],t.SU),t.Ri),A.oI(!1),A.aFQ(""),A.mX(n),A.jC(!0,n,!0,!0,n,n,!1),A.a([],t.V),A.dx(n,n,n,t.X,t.xW),new A.cI(l),new A.cI(l),!1,!1)
 l.hI()
 s=A.iQ(m,l,t.oQ)
-l=A.ft("TitleText")
+l=A.ft("titleText")
 m=$.u()
 r=m.d
 r===$&&A.b()
@@ -47833,7 +47833,7 @@ return A.I(A.k5(),$async$oU)
 case 3:m=i.av(h.aB(b.a,"userId"))
 l=t.N
 k=A.al(["Content-Type","application/json"],l,l)
-j=A.Uw("POST",A.dK("http://pcs.pah.kr:1221/api/user-info",0,null))
+j=A.Uw("POST",A.dK("https://bugi.busandaejin.com//api/user-info",0,null))
 j.skZ(0,B.aN.hq(A.al(["userId",m],l,t.T)))
 j.r.C(0,k)
 i=A
@@ -47944,7 +47944,7 @@ qH(){var s=0,r=A.C(t.z),q=this,p,o,n,m,l,k,j,i
 var $async$qH=A.D(function(a,b){if(a===1)return A.z(b,r)
 while(true)switch(s){case 0:l=t.N
 k=A.al(["Content-Type","application/json"],l,l)
-j=A.Uw("POST",A.dK("http://pcs.pah.kr:1221/api/sign-in",0,null))
+j=A.Uw("POST",A.dK("https://bugi.busandaejin.com//api/sign-in",0,null))
 j.skZ(0,B.aN.hq(A.al(["userId",q.ch.a.a,"userPw",q.cx.a.a],l,l)))
 j.r.C(0,k)
 i=A
@@ -48090,7 +48090,7 @@ rG(){var s=0,r=A.C(t.z),q=this,p,o,n,m,l
 var $async$rG=A.D(function(a,b){if(a===1)return A.z(b,r)
 while(true)switch(s){case 0:p=t.N
 o=A.al(["Content-Type","application/json"],p,p)
-n=A.Uw("POST",A.dK("http://pcs.pah.kr:1221/api/sign-up",0,null))
+n=A.Uw("POST",A.dK("https://bugi.busandaejin.com//api/sign-up",0,null))
 m=q.db.a.a
 n.skZ(0,B.aN.hq(A.al(["userId",m,"userPw",q.fx.a.a,"userName",q.ch.a.a,"userPhoneNumber",q.cx.a.a,"userEmail",m],p,p)))
 n.r.C(0,o)
