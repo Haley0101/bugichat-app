@@ -16,7 +16,7 @@ class ChatViewPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorTheme.white,
       appBar: GlobalWidget().appbar(
-        title: tr('TitleText'),
+        title: tr('titleText'),
         bottom: const PreferredSize(
           preferredSize: Size.fromHeight(0), child: SizedBox()
         ),
