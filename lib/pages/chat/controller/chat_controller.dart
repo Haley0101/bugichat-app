@@ -40,26 +40,8 @@ class ChatController extends GetxController {
   }
 
 
-  // getScreenLang() async {
-  //   SharedPreferences prefs = await SharedPreferences.getInstance();
-  //   String? userLang = prefs.getString('userLang');
-  //   if (userLang == "ko") {
-  //     screenLang = langKO();
-  //     print("한국어로 설정 됨");
-  //   } else if (userLang == "en") {
-  //     screenLang = langEN();
-  //     print("영어로 설정 됨");
-  //   } else if (userLang == "jp") {
-  //     screenLang = langJP();
-  //     print("일본어로 설정 됨");
-  //   } else if (userLang == "cn") {
-  //     screenLang = langCN();
-  //     print("중국어로 설정 됨");
-  //   }
-  // }
-
-
   onClickSendButton(BuildContext context) async {
+    isLoading.value = true; // Loading starts here
     print(context.locale.toString());
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String? userId = prefs.getString('userId');
@@ -80,9 +62,10 @@ class ChatController extends GetxController {
       final result = jsonDecode(response.body) as Map<String, dynamic>;
 
       chatHistory.add(ChatMessage(result["chatBot"], ChatMessageType.OtherMessage));
-      isLoading.value = true; // Loading finished, update the UI
+      isLoading.value = false; // Loading finished, update the UI
       return result;
     } else {
+      isLoading.value = false;
       // Handle any error situation you'd like
     }
   }

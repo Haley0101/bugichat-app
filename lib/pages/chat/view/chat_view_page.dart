@@ -102,23 +102,23 @@ class ChatViewPage extends StatelessWidget {
                                       color: const Color.fromRGBO(208, 245, 190, 1),
                                       borderRadius: BorderRadius.circular(8.r),
                                     ),
-                                    child: Text(
-                                      controller.chatHistory[i].content.replaceAll("\n", ""),
-                                      style: TextStyle(
-                                        fontSize: 28.sp,
-                                        fontWeight: FontWeight.bold,
+                                    child:
+                                      (controller.isLoading.value && i == controller.chatHistory.length - 1)
+                                          ? Image.asset('assets/icon/chatLoading.gif')
+                                          : Text(
+                                        controller.chatHistory[i].content.replaceAll("\n", ""),
+                                        style: TextStyle(fontSize:28.sp, fontWeight: FontWeight.bold,),
+                                        softWrap:true,
+                                        maxLines:null,
                                       ),
-                                      softWrap: true,
-                                      maxLines: null,
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    ),
                     ),
                   ),
                 ),
@@ -136,8 +136,16 @@ class ChatViewPage extends StatelessWidget {
                           controller.userInput.value = controller.userInputText.text;
                           controller.userInputText.clear();
                           controller.userInputTextFocus.unfocus();
-                          controller.isLoading.value = false;
+                          controller.isLoading.value = true;
                           await controller.onClickSendButton(context);
+
+                          Future.delayed(const Duration(seconds:2),(){
+                            if(controller.isLoading.value) {
+                              print("Loading Done");
+                              controller.isLoading.value = false;
+                            }
+                          });
+
                         },
                         child: SvgPicture.asset('assets/icon/sendUi.svg',
                             height: 26.h))),
