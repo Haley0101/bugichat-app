@@ -1,4 +1,4 @@
 
 class Config {
-  String globalIp = "https://bugi.busandaejin.com/";
+  String globalIp = "https://bugi.busandaejin.com";
 }
