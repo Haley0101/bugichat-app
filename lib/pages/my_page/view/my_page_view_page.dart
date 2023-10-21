@@ -16,7 +16,7 @@ class MyPageViewPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorTheme.grayBackground,
       appBar: GlobalWidget().appbar(
-        title: tr('TitleText'),
+        title: tr('titleText'),
         bottom: const PreferredSize(
           preferredSize: Size.fromHeight(0),
           child: SizedBox()

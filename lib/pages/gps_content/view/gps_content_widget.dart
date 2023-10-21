@@ -9,6 +9,10 @@ Widget suyeong_gu() {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        Padding(
+          padding: EdgeInsets.only(left: 18.w, top: 22.h, bottom: 8.h),
+          child: Text("주변 가볼 만한 곳", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp)),
+        ),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
@@ -132,8 +136,9 @@ Widget suyeong_gu() {
 
 Widget geumjeong_gu() {
   return Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
+    crossAxisAlignment: CrossAxisAlignment.center,
     children: [
+      Center(child: Text("현재 준비중 입니다.", textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28.sp),))
       // SingleChildScrollView(
       //   scrollDirection: Axis.horizontal,
       //   child: Row(
@@ -181,10 +186,10 @@ Widget geumjeong_gu() {
       //     ],
       //   ),
       // ),
-      Padding(
-        padding: EdgeInsets.only(left: 18.w, top: 22.h, bottom: 8.h),
-        child: Text("주변 관광지 코스", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp)),
-      ),
+      // Padding(
+      //   padding: EdgeInsets.only(left: 18.w, top: 22.h, bottom: 8.h),
+      //   child: Text("주변 관광지 코스", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp)),
+      // ),
       // SingleChildScrollView(
       //   scrollDirection: Axis.horizontal,
       //   child: Row(
@@ -240,6 +245,10 @@ Widget saha_gu() {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
+      Padding(
+        padding: EdgeInsets.only(left: 18.w, top: 22.h, bottom: 8.h),
+        child: Text("주변 가볼 만한 곳", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp)),
+      ),
       SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(

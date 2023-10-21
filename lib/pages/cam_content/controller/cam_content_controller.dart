@@ -122,8 +122,9 @@ class CamContentController extends GetxController {
 // 카메라로 사진 찍는 함수
   pickCarema() async {
     var pickedImage = await ImagePicker().pickImage(source : ImageSource.camera);
-    if (pickedImage == null)
+    if (pickedImage == null) {
       return null;
+    }
     // Convert XFile to File
     image.value = File(pickedImage.path);
     output.value = "광안리";
@@ -133,8 +134,9 @@ class CamContentController extends GetxController {
 // 카메라로 사진 찍는 함수
   pickGallery() async {
     var pickedImage = await ImagePicker().pickImage(source : ImageSource.gallery);
-    if (pickedImage == null)
+    if (pickedImage == null) {
       return null;
+    }
     // Convert XFile to File
     image.value = File(pickedImage.path);
     output.value = "광안리";

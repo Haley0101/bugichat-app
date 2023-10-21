@@ -2,10 +2,7 @@ import 'dart:convert';
 
 import 'package:bugichat/common/config/config.dart';
 import 'package:bugichat/common/helper/email_format_helper.dart';
-import 'package:bugichat/common/service/timer_service.dart';
 import 'package:bugichat/common/util/auth_controller.dart';
-import 'package:bugichat/common/util/sms_controller.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

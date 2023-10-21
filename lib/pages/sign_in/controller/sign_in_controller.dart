@@ -9,7 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:restart_app/restart_app.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 
@@ -77,7 +76,7 @@ void showDefaultDialog(BuildContext context) {
           children: [
             TextButton(
                 onPressed: () {
-                  context.setLocale(Locale('ko', 'KR'));
+                  context.setLocale(const Locale('ko', 'KR'));
                   Phoenix.rebirth(context);
                   // print(context.locale.toString());
                 },
@@ -85,21 +84,21 @@ void showDefaultDialog(BuildContext context) {
             ),
             TextButton(
               onPressed: () {
-                context.setLocale(Locale('en', 'US'));
+                context.setLocale(const Locale('en', 'US'));
                 Phoenix.rebirth(context);
               },
               child: Text('English', style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: ColorTheme.black))
             ),
             TextButton(
                 onPressed: () {
-                  context.setLocale(Locale('ja', 'JP'));
+                  context.setLocale(const Locale('ja', 'JP'));
                   Phoenix.rebirth(context);
                 },
                 child: Text('日語', style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: ColorTheme.black))
             ),
             TextButton(
                 onPressed: () {
-                  context.setLocale(Locale('zh', 'CN'));
+                  context.setLocale(const Locale('zh', 'CN'));
                   Phoenix.rebirth(context);
                 },
                 child: Text('中國語', style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: ColorTheme.black))

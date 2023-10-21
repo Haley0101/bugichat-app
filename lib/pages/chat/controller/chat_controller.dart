@@ -1,9 +1,5 @@
 import 'dart:convert';
 import 'package:bugichat/common/config/config.dart';
-import 'package:bugichat/common/languages/langCN.dart';
-import 'package:bugichat/common/languages/langEN.dart';
-import 'package:bugichat/common/languages/langJP.dart';
-import 'package:bugichat/common/languages/langKO.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
@@ -26,6 +22,7 @@ class ChatController extends GetxController {
   // RxList chatHistory = [].obs;
   final chatHistory = <ChatMessage>[].obs;
   RxBool isLoading = false.obs;
+  RxBool waitingForBotResponse = false.obs;
 
   RxString userInput = "".obs;
 
@@ -41,6 +38,7 @@ class ChatController extends GetxController {
 
 
   onClickSendButton(BuildContext context) async {
+    waitingForBotResponse.value = true;
     isLoading.value = true; // Loading starts here
     print(context.locale.toString());
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -63,9 +61,11 @@ class ChatController extends GetxController {
 
       chatHistory.add(ChatMessage(result["chatBot"], ChatMessageType.OtherMessage));
       isLoading.value = false; // Loading finished, update the UI
+      waitingForBotResponse.value = false;
       return result;
     } else {
       isLoading.value = false;
+      waitingForBotResponse.value = false;
       // Handle any error situation you'd like
     }
   }

@@ -1,10 +1,6 @@
 import 'dart:convert';
 
 import 'package:bugichat/common/config/config.dart';
-import 'package:bugichat/common/languages/langCN.dart';
-import 'package:bugichat/common/languages/langEN.dart';
-import 'package:bugichat/common/languages/langJP.dart';
-import 'package:bugichat/common/languages/langKO.dart';
 import 'package:bugichat/common/model/user_model.dart';
 import 'package:bugichat/common/util/auth_controller.dart';
 import 'package:bugichat/common/util/user_controller.dart';

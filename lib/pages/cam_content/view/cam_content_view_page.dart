@@ -62,9 +62,9 @@ class CamContentViewPage extends StatelessWidget {
                   ? Container()
                   : Center(child: Row(
                     children: [
-                      Text('찾으시는 장소는'),
+                      const Text('찾으시는 장소는'),
                       Text(' ${controller.output.value} ', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.sp, color: ColorTheme.skyBlue),),
-                      Text('입니다!!')
+                      const Text('입니다!!')
                     ],
                   ))
                 ),

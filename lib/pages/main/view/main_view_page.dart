@@ -5,7 +5,6 @@ import 'package:bugichat/pages/main/bottom_navigation/controller/bottom_navigati
 import 'package:bugichat/pages/main/bottom_navigation/view/bottom_navigation_bar.dart';
 import 'package:bugichat/pages/main/controller/main_controller.dart';
 import 'package:bugichat/pages/my_page/view/my_page_view_page.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

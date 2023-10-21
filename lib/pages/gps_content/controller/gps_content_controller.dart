@@ -9,7 +9,7 @@ class GpsContentController extends GetxController {
   // }
 
   getRandomCity() {
-    var randomIndex = Random().nextInt(2);
+    var randomIndex = Random().nextInt(3);
 
     List<Map> cityArr = [
       {'name': '수영구 광안동', 'text': '광안대교'},

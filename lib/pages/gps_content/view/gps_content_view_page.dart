@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:bugichat/common/global_widget/global_widget.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class GpsContentViewPage extends StatelessWidget {
   const GpsContentViewPage({Key? key}) : super(key: key);
@@ -61,10 +60,6 @@ class GpsContentViewPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 14.h),
-            Padding(
-              padding: EdgeInsets.only(left: 18.w, top: 22.h, bottom: 8.h),
-              child: Text("주변 가볼 만한 곳", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp)),
-            ),
             if (cityName == "수영구 광안동")
               suyeong_gu()
             else if (cityName == "금정구 청룡동")
