@@ -39,8 +39,11 @@ class ChatViewPage extends StatelessWidget {
           child: Column(children: [
             Expanded(
                 child: SingleChildScrollView(
-                    child: SizedBox(width: 440.h,
-                      child: Obx(() => controller.chatHistory.isEmpty ? Center(
+                    child: SizedBox(
+              width: 440.h,
+              child: Obx(
+                () => controller.chatHistory.isEmpty
+                    ? Center(
                         child: Padding(
                           padding: EdgeInsets.only(
                               top: 180.h, right: 8.w, left: 8.w),
@@ -57,47 +60,98 @@ class ChatViewPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: List.generate(
                           controller.chatHistory.length,
-                              (i) => Align(
+                          (i) => Align(
                             alignment: controller.chatHistory[i].type ==
-                                ChatMessageType.MyMessage
+                                    ChatMessageType.MyMessage
                                 ? Alignment.centerRight
                                 : Alignment.centerLeft,
                             child: Padding(
                               padding: EdgeInsets.only(
                                   left: 8.w,
                                   right: 8.w,
-                                  top: i == controller.chatHistory.length -1 && controller.waitingForBotResponse.value ?32.h :4.h ,
-                                  bottom:i == controller.chatHistory.length -1 && !controller.waitingForBotResponse.value ?32.h :4.h),
-                              child:
-                              (controller.waitingForBotResponse.value && i == controller.chatHistory.length -1)
+                                  top: i == controller.chatHistory.length - 1 &&
+                                          controller.waitingForBotResponse.value
+                                      ? 32.h
+                                      : 4.h,
+                                  bottom:
+                                      i == controller.chatHistory.length - 1 &&
+                                              !controller
+                                                  .waitingForBotResponse.value
+                                          ? 32.h
+                                          : 4.h),
+                              child: (controller.waitingForBotResponse.value &&
+                                      i == controller.chatHistory.length - 1)
                                   ? Image.asset('assets/icon/chatLoading.gif')
                                   : (controller.chatHistory[i].type ==
-                                  ChatMessageType.MyMessage)
-                                  ? Padding(padding:(EdgeInsets.only(right:-0.w)),child :
-                              Container(decoration :(BoxDecoration(color :(const Color.fromRGBO(152,238,204,1)),borderRadius:(BorderRadius.circular(8.r)))),child :(Padding(padding :EdgeInsets.all(8.w),child :
-                              Text(controller.chatHistory[i].content,style :(TextStyle(fontSize :28.sp ,fontWeight:FontWeight.bold)),softWrap:true ,maxLines:null,),),),),)
-                                  : Row(crossAxisAlignment :(CrossAxisAlignment.start),children:[
-                              Container(margin:EdgeInsets.only(right: 8.w),
-                              child:
-                              Image.asset('assets/icon/sign_logo.png', width:
-                              25.h, height: 25.h,),
+                                          ChatMessageType.MyMessage)
+                                      ? Padding(
+                                          padding:
+                                              (EdgeInsets.only(right: -0.w)),
+                                          child: Container(
+                                            decoration: (BoxDecoration(
+                                                color: (const Color.fromRGBO(
+                                                    152, 238, 204, 1)),
+                                                borderRadius:
+                                                    (BorderRadius.circular(
+                                                        8.r)))),
+                                            child: Padding(
+                                              padding: EdgeInsets.all(8.w),
+                                              child: Text(
+                                                controller
+                                                    .chatHistory[i].content,
+                                                style: (TextStyle(
+                                                    fontSize: 28.sp,
+                                                    fontWeight:
+                                                        FontWeight.bold)),
+                                                softWrap: true,
+                                                maxLines: null,
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      : Row(
+                                          crossAxisAlignment:
+                                              (CrossAxisAlignment.start),
+                                          children: [
+                                            Container(
+                                              margin:
+                                                  EdgeInsets.only(right: 8.w),
+                                              child: Image.asset(
+                                                'assets/icon/sign_logo.png',
+                                                width: 25.h,
+                                                height: 25.h,
+                                              ),
+                                            ),
+                                            Flexible(
+                                              child: Container(
+                                                margin: EdgeInsets.only(
+                                                    right: 62.w),
+                                                padding: EdgeInsets.all(8.w),
+                                                decoration: BoxDecoration(
+                                                    color:
+                                                        (const Color.fromRGBO(
+                                                            208, 245, 190, 1)),
+                                                    borderRadius:
+                                                        (BorderRadius.circular(
+                                                            8.r))),
+                                                child: Text(
+                                                  controller
+                                                      .chatHistory[i].content
+                                                      .replaceAll("\n", ""),
+                                                  style: (TextStyle(
+                                                      fontSize: 28.sp,
+                                                      fontWeight:
+                                                          FontWeight.bold)),
+                                                  softWrap: true,
+                                                  maxLines: null,
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
                             ),
-                            Flexible(child:
-                            Container(margin: EdgeInsets.only(right: 62.w),
-                              padding: EdgeInsets.all(8.w),
-                              decoration:
-                              BoxDecoration(color:(const Color.fromRGBO(
-                                  208,245,190,1)), borderRadius:(BorderRadius.circular(8.r))),
-                              child:
-                              Text(controller.chatHistory[i].content.replaceAll("\n", ""), style:(TextStyle(fontSize:28.sp, fontWeight: FontWeight.bold)),
-                                softWrap:true,
-                                maxLines:null,
-                              ),
-                              ),)
-                              ],),
                           ),
                         ),
-                      ),
                       ),
               ),
             ))),
