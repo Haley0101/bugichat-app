@@ -38,6 +38,7 @@ class ChatController extends GetxController {
 
 
   onClickSendButton(BuildContext context) async {
+    chatHistory.add(ChatMessage("Loading...", ChatMessageType.OtherMessage));
     waitingForBotResponse.value = true;
     isLoading.value = true; // Loading starts here
     print(context.locale.toString());
@@ -59,7 +60,8 @@ class ChatController extends GetxController {
     if (response.statusCode == 200) {
       final result = jsonDecode(response.body) as Map<String, dynamic>;
 
-      chatHistory.add(ChatMessage(result["chatBot"], ChatMessageType.OtherMessage));
+      // chatHistory.add(ChatMessage(result["chatBot"], ChatMessageType.OtherMessage));
+      chatHistory[chatHistory.length - 1] = ChatMessage(result["chatBot"], ChatMessageType.OtherMessage);
       isLoading.value = false; // Loading finished, update the UI
       waitingForBotResponse.value = false;
       return result;
