@@ -61,8 +61,7 @@ class ChatViewPage extends StatelessWidget {
                   children: List.generate(
                     controller.chatHistory.length,
                         (i) => Align(
-                      alignment: controller.chatHistory[i].type ==
-                          ChatMessageType.MyMessage
+                      alignment: controller.chatHistory[i].type == ChatMessageType.MyMessage
                           ? Alignment.centerRight
                           : Alignment.centerLeft,
                       child: Padding(

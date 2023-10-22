@@ -26,7 +26,7 @@ void main() async {
     () {
       runApp(Phoenix(
         child: EasyLocalization(
-          supportedLocales: const [Locale('en', 'US'), Locale('ko', 'KR')],
+          supportedLocales: const [Locale('en', 'US'), Locale('ko', 'KR'), Locale('ja', 'JP'), Locale('zh', 'CN')],
           path: 'assets/translations',
           child: ScreenUtilInit(
             //화면 일정 비율로 설정해주기 위한 클래스

@@ -1,5 +1,6 @@
 import 'package:bugichat/common/theme/color_theme.dart';
 import 'package:bugichat/pages/main/bottom_navigation/controller/bottom_navigation_controller.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -44,7 +45,7 @@ class BottomNavgationWidget extends StatelessWidget {
                           colorFilter: ColorFilter.mode(controller.selectedIndex.value == 0 ? ColorTheme.blue : ColorTheme.black, BlendMode.srcATop),
                           child: SvgPicture.asset('assets/icon/bottom_nav_accept.svg')),
                     ),
-                    label: "챗봇"),
+                    label: tr('BottomNav1')),
                 BottomNavigationBarItem(
                     icon: Padding(
                       padding: EdgeInsets.only(bottom: 5.h),
@@ -52,7 +53,7 @@ class BottomNavgationWidget extends StatelessWidget {
                           colorFilter: ColorFilter.mode(controller.selectedIndex.value == 1 ? ColorTheme.blue : ColorTheme.black, BlendMode.srcATop),
                           child: SvgPicture.asset('assets/icon/location.svg')),
                     ),
-                    label: "관광지 추천"),
+                    label: tr('BottomNav2')),
                 BottomNavigationBarItem(
                     icon: Padding(
                       padding: EdgeInsets.only(bottom: 5.h),
@@ -60,7 +61,7 @@ class BottomNavgationWidget extends StatelessWidget {
                           colorFilter: ColorFilter.mode(controller.selectedIndex.value == 2 ? ColorTheme.blue : ColorTheme.black, BlendMode.srcATop),
                           child: SvgPicture.asset('assets/icon/camera.svg')),
                     ),
-                    label: "사진으로 찾기"),
+                    label: tr('BottomNav3')),
                 BottomNavigationBarItem(
                     icon: Padding(
                       padding: EdgeInsets.only(bottom: 5.h),
@@ -68,7 +69,7 @@ class BottomNavgationWidget extends StatelessWidget {
                           colorFilter: ColorFilter.mode(controller.selectedIndex.value == 3 ? ColorTheme.blue : ColorTheme.black, BlendMode.srcATop),
                           child: SvgPicture.asset('assets/icon/bottom_nav_my.svg')),
                     ),
-                    label: "마이페이지"),
+                    label: tr('BottomNav4')),
               ],
             )),
       ),

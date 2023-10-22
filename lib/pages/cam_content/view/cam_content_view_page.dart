@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -18,7 +19,7 @@ class CamContentViewPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: GlobalWidget().appbar(
-        title: "사진으로 관광지 탐색",
+        title: tr('CamContent'),
         bottom: const PreferredSize(
             preferredSize: Size.fromHeight(0), child: SizedBox()),
         hasLeading: false,
@@ -62,9 +63,9 @@ class CamContentViewPage extends StatelessWidget {
                   ? Container()
                   : Center(child: Row(
                     children: [
-                      const Text('찾으시는 장소는'),
+                      Text(tr('CamContentFind1')),
                       Text(' ${controller.output.value} ', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.sp, color: ColorTheme.skyBlue),),
-                      const Text('입니다!!')
+                      Text(tr('CamContentFind2'))
                     ],
                   ))
                 ),
@@ -77,7 +78,7 @@ class CamContentViewPage extends StatelessWidget {
                   children: [
                     Container(
                       margin: EdgeInsets.only(left: 18.w, bottom: 8.h),
-                      child: Text("주변 관광지", style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold))
+                      child: Text(tr('CamContenttourist'), style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold))
                     ),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
@@ -97,8 +98,8 @@ class CamContentViewPage extends StatelessWidget {
                                   children: [
                                     ClipRRect(borderRadius: BorderRadius.circular(8.r), child: Image.asset('assets/icon/minrack.jpg', width: 200.w, height: 130.h, fit: BoxFit.cover)),
                                     SizedBox(height: 8.h),
-                                    Text("민락수변공원", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
-                                    Text("부산 수영구 광안해변로 361", style: TextStyle(fontSize: 12.sp))
+                                    Text(tr('CamContenttourist1_1'), style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
+                                    Text(tr('CamContenttourist1_2'), style: TextStyle(fontSize: 12.sp))
                                   ],
                                 )
                             ),
@@ -117,8 +118,8 @@ class CamContentViewPage extends StatelessWidget {
                                 children: [
                                   ClipRRect(borderRadius: BorderRadius.circular(8.r), child: Image.asset('assets/icon/rhkddksgoqus.jpg', width: 200.w, height: 130.h, fit: BoxFit.cover,)),
                                   SizedBox(height: 8.h),
-                                  Text("광안해변공원", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
-                                  Text("부산 수영구 민락동 176-33", style: TextStyle(fontSize: 12.sp))
+                                  Text(tr('CamContenttourist2_1'), style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
+                                  Text(tr('CamContenttourist2_2'), style: TextStyle(fontSize: 12.sp))
                                 ],
                               ),
                             ),
@@ -137,8 +138,8 @@ class CamContentViewPage extends StatelessWidget {
                                 children: [
                                   ClipRRect(borderRadius: BorderRadius.circular(8.r), child: Image.asset('assets/icon/samik_2.jpg', width: 200.w, height: 130.h, fit: BoxFit.cover,)),
                                   SizedBox(height: 8.h),
-                                  Text("남천동 벛곷길", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
-                                  Text("부산 수영구 광안해변로 100", style: TextStyle(fontSize: 12.sp))
+                                  Text(tr('CamContenttourist3_1'), style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
+                                  Text(tr('CamContenttourist3_2'), style: TextStyle(fontSize: 12.sp))
                                 ],
                               ),
                             ),
@@ -151,7 +152,7 @@ class CamContentViewPage extends StatelessWidget {
 
                     Container(
                       margin: EdgeInsets.only(left: 18.w, bottom: 8.h),
-                      child: Text("주변 맛집", style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold))
+                      child: Text(tr('CamContentrestlist'), style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold))
                     ),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
@@ -171,8 +172,8 @@ class CamContentViewPage extends StatelessWidget {
                                   children: [
                                     ClipRRect(borderRadius: BorderRadius.circular(8.r), child: Image.asset('assets/icon/tonshow.jpg', width: 200.w, height: 130.h, fit: BoxFit.cover)),
                                     SizedBox(height: 8.h),
-                                    Text("톤쇼우", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
-                                    Text("부산 수영구 광안해변로279번길 13", style: TextStyle(fontSize: 12.sp))
+                                    Text(tr('CamContentrestlist1_1'), style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
+                                    Text(tr('CamContentrestlist1_2'), style: TextStyle(fontSize: 12.sp))
                                   ],
                                 )
                             ),
@@ -191,8 +192,8 @@ class CamContentViewPage extends StatelessWidget {
                                 children: [
                                   ClipRRect(borderRadius: BorderRadius.circular(8.r), child: Image.asset('assets/icon/gowok.jpg', width: 200.w, height: 130.h, fit: BoxFit.cover,)),
                                   SizedBox(height: 8.h),
-                                  Text("고옥", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
-                                  Text("부산 수영구 광남로 6", style: TextStyle(fontSize: 12.sp))
+                                  Text(tr('CamContentrestlist2_1'), style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
+                                  Text(tr('CamContentrestlist2_2'), style: TextStyle(fontSize: 12.sp))
                                 ],
                               ),
                             ),
@@ -211,8 +212,8 @@ class CamContentViewPage extends StatelessWidget {
                                 children: [
                                   ClipRRect(borderRadius: BorderRadius.circular(8.r), child: Image.asset('assets/icon/cho.jpg', width: 200.w, height: 130.h, fit: BoxFit.cover,)),
                                   SizedBox(height: 8.h),
-                                  Text("초필살돼지구이", style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
-                                  Text("부산 수영구 광남로108번길 9 1층", style: TextStyle(fontSize: 12.sp))
+                                  Text(tr('CamContentrestlist3_1'), style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
+                                  Text(tr('CamContentrestlist3_2'), style: TextStyle(fontSize: 12.sp))
                                 ],
                               ),
                             ),

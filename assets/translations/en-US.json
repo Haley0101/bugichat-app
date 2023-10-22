@@ -2,6 +2,7 @@
   "titleText": "BUGI-CHAT",
 
   "loginText": "login",
+  "unLogin": "non-members",
   "unLoginText": "Use as a non-member",
   "signUp": "Membership",
 
@@ -22,6 +23,82 @@
   "companyName": "Daejin Electronics and Telecommunications High School \nFunctional Department",
   "companyName2": "BD.GG | Boogie Chat",
 
-  "text1": "We consider you have agreed to the terms and conditions below when you sign in/member."
+  "text1": "We consider you have agreed to the terms and conditions below when you sign in/member.",
+
+  "SingUp1_Title":"Please agree to the terms and conditions of use. 🙌",
+  "SingUp1_AllCheck": "All agree",
+  "SingUp1_CheckBox":"[Essential]",
+  "SingUp1_CheckList1": "Consent to Terms and Conditions",
+  "SingUp1_CheckList2": "Consent to Collecting and Using Personal Information",
+
+  "SingUp2_Title":"Please set up an account 📝",
+  "SingUp2_Email": "Please enter your email",
+  "SingUp2_ID": "Please enter ID",
+  "SingUp2_Pass": "Please enter a password",
+  "SingUp2_Pass_Check": "Please enter the password again",
+
+  "SingUp3_Title":"Tell me about yourself. 😀",
+  "SingUp3_Name": "Please enter a name",
+  "SingUp3_PhoneNumber": "Enter numbers without -",
+
+  "SingUp4_SingUp": "Going to log in",
+  "SingUp4_Text1": "On Boogie Chat",
+  "SingUp4_Text2": "What you signed up for",
+  "SingUp4_Text3": "Welcome!",
+
+  "CamContent":"Find tourist attractions with pictures",
+  "CamContentFind1":"The place you're looking for is",
+  "CamContentFind2":"!!",
+  "CamContenttourist":"nearby tourist attractions",
+
+  "CamContenttourist1_1":"Milrak Waterside Park",
+  "CamContenttourist1_2":"361, Gwanganhaebyeon-ro, Suyeong-gu, Busan",
+  "CamContenttourist2_1":"Gwangan Beach Park",
+  "CamContenttourist2_2":"176-33, Millak-dong, Suyeong-gu, Busan",
+  "CamContenttourist3_1":"Namcheon Cherry Blossom Road",
+  "CamContenttourist3_2":"100, Gwanganhaebyeon-ro, Suyeong-gu, Busan",
+
+  "CamContentrestlist":"Nearby restaurants",
+  "CamContentrestlist1_1":"Tonshow",
+  "CamContentrestlist1_2":"13, Gwanganhaebyeon-ro 279beon-gil, Suyeong-gu, Busan",
+  "CamContentrestlist2_1":"Go-ok",
+  "CamContentrestlist2_2":"6, Gwangnam-ro, Suyeong-gu, Busan, Republic of Korea",
+  "CamContentrestlist3_1":"Grilled herbicide pork",
+  "CamContentrestlist3_2":"9, Gwangnam-ro 108beon-gil, Suyeong-gu, Busan",
+
+  "GPSMain":"GPS Tourist Attractions Recommendation",
+  "GPSInfo":"Current location",
+  "GPSPlace":"A Place Worth Visiting",
+
+  "GPSContenttourlist":"A Course of Nearby Tourist Attractions",
+  "GPSContenttourlist1_1":"Milrak Waterside Park",
+  "GPSContenttourlist1_2":"361, Gwanganhaebyeon-ro, Suyeong-gu, Busan",
+  "GPSContenttourlist2_1":"Gwangan Beach Park",
+  "GPSContenttourlist2_2":"176-33, Millak-dong, Suyeong-gu, Busan",
+  "GPSContenttourlist3_1":"Gamcheon Culture Village",
+  "GPSContenttourlist3_2":"200, Gamnae 1-ro, Saha-gu, Busan",
+  "GPSContenttourlist4_1":"Goejeong Alley Market",
+  "GPSContenttourlist4_2":"7, Saha-ro 198beon-gil, Saha-gu, Busan",
+
+  "GPSContenttourlistCourse1_1_1":"Recommended Tour Course",
+  "GPSContenttourlistCourse1_1_2":"Suyeong Paldo Market - Suyeong Historical Park - Suyeongseong Village Museum",
+  "GPSContenttourlistCourse1_2_1":"Gwangan Course",
+  "GPSContenttourlistCourse1_2_2":"Millak The Market - Milrak Waterfront Park - Surf Marine - Gwangalli Beach",
+  "GPSContenttourlistCourse1_3_1":"A Walk Course",
+  "GPSContenttourlistCourse1_3_2":"Milrak Waterfront Park - Gwangan Beach Park - Gwanganri Beach Theme Street - Namcheon Beach Park - \nNamcheon-dong Cherry Blossom Street",
+
+  "GPSContenttourlistCourse2_1_1":"Recommended Tour Course",
+  "GPSContenttourlistCourse2_1_2":"Gamcheon Culture Village - Goejeong Alley Market - Eulsukdo (Nakgang River Estuary Eco Center | Museum of Modern Art) - \nBunecia Jangrim Port",
+  "GPSContenttourlistCourse2_2_1":"Recommended course 1",
+  "GPSContenttourlistCourse2_2_2":"Moleundae Walking (Nakjo Observatory) - Dadaepo Beach & Beach Park - Dadaesi Park - \nGamcheon Culture Village",
+  "GPSContenttourlistCourse2_3_1":"Recommended course 2",
+  "GPSContenttourlistCourse2_3_2":"Eulsukdo Island (Nakgang River Estuary Eco Center | Museum of Modern Art) - Lower Oil Standing Market - \nVunezia Jangrim Port - Dadaepo Beach & Beach Park",
+
+  "GPSContentLoad": "Currently in preparation.",
+
+  "BottomNav1": "Chatbot",
+  "BottomNav2": "Tourist attraction recommendation",
+  "BottomNav3": "Search by photo",
+  "BottomNav4": "My Page"
 
 }

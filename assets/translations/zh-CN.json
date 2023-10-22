@@ -2,6 +2,7 @@
   "titleText": "乌龟聊天",
 
   "loginText": "登录",
+  "unLogin": "非会员",
   "unLoginText": "非会员使用",
   "signUp": "注册会员",
 
@@ -22,6 +23,80 @@
   "companyName": "大进电子通信高中| 技能部",
   "companyName2": "BD.GG | 浮标聊天",
 
-  "text1":"登录/注册会员时视为同意以下条款。"
+  "text1":"登录/注册会员时视为同意以下条款。",
+
+  "SingUp1_Title": "请同意使用条款。 🙌",
+  "SingUp1_AllCheck": "所有同意",
+  "SingUp1_CheckBox":"[必修]",
+  "SingUp1_CheckList1": "同意条款和条件",
+  "SingUp1_CheckList2": "同意收集和使用个人信息",
+
+  "SingUp2_Title": "请设置帐户 📝",
+  "SingUp2_Email": "请输入 您的电子邮件",
+  "SingUp2_ID": "请输入ID",
+  "SingUp2_Pass": "请输入密码",
+  "SingUp2_Pass_Check": "请再次输入密码",
+
+  "SingUp3_标题":"说说你自己。 😀",
+  "SingUp3_Name": "请输入名称",
+  "SingUp3_PhoneNumber": "只输入数字，- 不输入",
+
+  "SingUp4_SingUp": "去登录",
+  "SingUp4_Text1": "在布吉聊天",
+  "SingUp4_Text2": "您注册的内容",
+  "SingUp4_Text3":"欢迎！",
+  "CamContent":"寻找有图片的旅游景点 ",
+  "CamContentFind1":"你要找的地方是",
+  "CamContentFind2":"!!",
+
+  "CamContenttourist":"附近的旅游景点",
+  "CamContenttourist1_1":"民乐水边公园",
+  "CamContenttourist1_2":"釜山水营区广安海边路361",
+  "CamContenttourist2_1":"广安海边公园",
+  "CamContenttourist2_2":"釜山水营区民乐洞176-33",
+  "CamContenttourist3_1":"南川洞ᆾ/路",
+  "CamContenttourist3_2":"釜山水营区广安海边路100",
+
+  "CamContentrestlist":"周边美食店",
+  "CamContentrestlist1_1":"顿绍",
+  "CamContentrestlist1_2":"釜山水营区广安海边路279号街13",
+  "CamContentrestlist2_1":"古屋",
+  "CamContentrestlist2_2":"釜山水营区广南路6",
+  "CamContentrestlist3_1":"草必杀猪烤肉",
+  "CamContentrestlist3_2":"釜山水营区广南路108号街91楼",
+  "GPSMain":"GPS观光地推荐",
+  "GPSInfo":"当前位置",
+  "GPSPlace":"周边值得一去的地方",
+
+  "GPSContenttourlist":"周边旅游景点路线",
+  "GPSContenttourlist1_1":"民乐水边公园",
+  "GPSContenttourlist1_2":"釜山水营区广安海边路361",
+  "GPSContenttourlist2_1":"广安海边公园",
+  "GPSContenttourlist2_2":"釜山水营区民乐洞176-33",
+  "GPSContenttourlist3_1":"甘川文化村",
+  "GPSContenttourlist3_2":"釜山沙下区甘乃一路200",
+  "GPSContenttourlist4_1":"槐亭胡同市场",
+  "GPSContenttourlist4_2":"釜山沙下区沙下路198号街7",
+
+  "GPSContenttourlistCourse1_1_1":"推荐旅游路线",
+  "GPSContenttourlistCourse1_2":"水营八道市场-水营历史公园-水营城村博物馆",
+  "GPSContenttourlistCourse1_2_1":"广安路线",
+  "GPSContenttourlistCourse1_2_2":"蜂蜡市场-民乐水边公园-瑟夫马林-广安里海水浴场",
+  "GPSContenttourlistCourse1_3_1":"散步路线",
+  "GPSContenttourlistCourse1_3_2":"民乐水边公园 - 广安海边公园 - 广安里海边主题街 - 南川海边公园 - \n 南川洞樱花街",
+
+  "GPSContenttourlistCourse2_1_1":"推荐观光路线",
+  "GPSContenttourlistCourse2_1_2":"甘川文化村 - 槐亭胡同市场 - 乙淑岛（洛东江河口生态中心 | 现代美术馆） - \n 威尼斯长林港",
+  "GPSContenttourlistCourse2_2_1":"推荐路线 1",
+  "GPSContenttourlistCourse2_2_2":"没云台散步（落日瞭望台） - 多大浦海水浴场&海边公园 - 多大氏公园 - \n甘川文化村",
+  "GPSContenttourlistCourse2_3_1":"推荐路线 2",
+  "GPSContenttourlistCourse2_3_2":"乙淑岛（洛东江河口生态中心 | 现代美术馆） - 下端石油常设市场 - \n 威尼斯长林港 - 多大浦海水浴场 & 海边公园",
+
+  "GPSContentLoad": "目前正在筹备中。",
+
+  "BottomNav1": "聊天机器人",
+  "BottomNav2": "旅游景点推荐",
+  "BottomNav3": "照片搜索",
+  "BottomNav4": "我的页面"
 
 }

@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:restart_app/restart_app.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 
@@ -75,33 +76,37 @@ void showDefaultDialog(BuildContext context) {
         child: Column(
           children: [
             TextButton(
-                onPressed: () {
-                  context.setLocale(const Locale('ko', 'KR'));
-                  Phoenix.rebirth(context);
+                onPressed: () async {
+                  await context.setLocale(Locale('ko', 'KR'));
+                  Restart.restartApp();
+                  // Phoenix.rebirth(context);
                   // print(context.locale.toString());
                 },
                 child: Text('한국어', style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: ColorTheme.black))
             ),
             TextButton(
-              onPressed: () {
-                context.setLocale(const Locale('en', 'US'));
-                Phoenix.rebirth(context);
+              onPressed: () async {
+                await context.setLocale(Locale('en', 'US'));
+                Restart.restartApp();
+                // Phoenix.rebirth(context);
               },
               child: Text('English', style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: ColorTheme.black))
             ),
             TextButton(
-                onPressed: () {
-                  context.setLocale(const Locale('ja', 'JP'));
-                  Phoenix.rebirth(context);
-                },
-                child: Text('日語', style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: ColorTheme.black))
+              onPressed: () async {
+                await context.setLocale(Locale('ja', 'JP'));
+                Restart.restartApp();
+                // Phoenix.rebirth(context);
+              },
+              child: Text('日語', style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: ColorTheme.black))
             ),
             TextButton(
-                onPressed: () {
-                  context.setLocale(const Locale('zh', 'CN'));
-                  Phoenix.rebirth(context);
-                },
-                child: Text('中國語', style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: ColorTheme.black))
+              onPressed: () async {
+                await context.setLocale(Locale('zh', 'CN'));
+                Restart.restartApp();
+                // Phoenix.rebirth(context);
+              },
+              child: Text('中國語', style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: ColorTheme.black))
             ),
           ],
         )

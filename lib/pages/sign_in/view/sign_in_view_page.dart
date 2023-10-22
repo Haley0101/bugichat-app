@@ -47,7 +47,7 @@ class SignInViewPage extends StatelessWidget {
               hintText: tr('idHintText')
             ),
             GlobalWidget().text(text: tr('pwText')),
-            GlobalWidget().textField(controller: controller.password, focusNode: controller.passwordFocusNode, hintText: '비밀번호를 입력해주세요.', isPassword: true),
+            GlobalWidget().textField(controller: controller.password, focusNode: controller.passwordFocusNode, hintText: tr('pwHintText'), isPassword: true),
             loginButton(
               onTap: () {
                 controller.loginButtonClick();
@@ -142,7 +142,7 @@ class SignInViewPage extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                '로그인',
+                tr('loginText'),
                 style: TextStyle(color: Colors.white, fontSize: 16.sp),
               ),
             ),
